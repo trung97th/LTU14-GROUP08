@@ -25,8 +25,5 @@ public class chess
 		} catch (Exception re) {
 			System.out.println("Connect Fail");
 		}
-
-		// System.out.println("Hello World");
     }
-	
 }
