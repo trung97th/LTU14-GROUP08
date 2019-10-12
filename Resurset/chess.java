@@ -20,7 +20,7 @@ public class Chess
 	{  
 		try {
 			ChessInterface stubChess= (ChessInterface)Naming.lookup("rmi://"
-											+chess.IP+":"+chess.PORT+"/Chess");
+											+Chess.IP+":"+Chess.PORT+"/Chess");
 			stubChess.Test();
 		} catch (Exception re) {
 			System.out.println("Connect Fail");
