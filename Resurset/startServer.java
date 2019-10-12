@@ -7,7 +7,7 @@ import java.rmi.registry.LocateRegistry;
 
 import ServerSide.ChessImpl;
 
-public class StartServer {
+public class startServer {
 
 	/**
 	 * @param args
@@ -19,10 +19,10 @@ public class StartServer {
 	public static void startSrv(){
 		try {
     		// int convertPort = new Integer(chess.PORT).intValue();
-    		Integer convertPort = Integer.valueOf(Chess.PORT);
+    		Integer convertPort = Integer.valueOf(chess.PORT);
 			LocateRegistry.createRegistry(convertPort);
 			ChessImpl impl= new ChessImpl();
-			Naming.rebind("rmi://"+Chess.IP+":"+Chess.PORT+"/Chess", impl);
+			Naming.rebind("rmi://"+chess.IP+":"+chess.PORT+"/Chess", impl);
 		} catch (RemoteException e1) {
 			e1.printStackTrace();
 		} catch (MalformedURLException e) {

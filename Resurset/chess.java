@@ -11,7 +11,7 @@ import java.rmi.registry.LocateRegistry;
 import ServerSide.ChessImpl;
 import ServerSide.ChessInterface;
 
-public class Chess
+public class chess
 {
 	public static String IP = "192.168.1.185";
 	public static String PORT = "1099";
@@ -20,7 +20,7 @@ public class Chess
 	{  
 		try {
 			ChessInterface stubChess= (ChessInterface)Naming.lookup("rmi://"
-											+Chess.IP+":"+Chess.PORT+"/Chess");
+											+chess.IP+":"+chess.PORT+"/Chess");
 			stubChess.Test();
 		} catch (Exception re) {
 			System.out.println("Connect Fail");
