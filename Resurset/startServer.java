@@ -7,7 +7,7 @@ import java.rmi.registry.LocateRegistry;
 
 import ServerSide.ChessImpl;
 
-public class startServer {
+public class StartServer {
 
 	/**
 	 * @param args
