@@ -7,10 +7,8 @@ import java.rmi.Naming;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
-
 import ServerSide.ChessImpl;
 import ServerSide.ChessInterface;
-
 public class chess
 {
 	public static String IP = "192.168.1.185";
