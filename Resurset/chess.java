@@ -11,7 +11,7 @@ import ServerSide.ChessImpl;
 import ServerSide.ChessInterface;
 public class chess
 {
-	public static String IP = "192.168.1.185";
+	public static String IP = "192.168.1.201";
 	public static String PORT = "1099";
 		
 	public static void main(String[] args)
